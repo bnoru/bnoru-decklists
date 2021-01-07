@@ -22,3 +22,7 @@ app_name = "main"
 urlpatterns = [
     path("", views.homepage),
 ]
+
+urlpatterns = [
+    path("db", views.db),
+]
