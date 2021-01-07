@@ -75,13 +75,23 @@ WSGI_APPLICATION = 'bnoru4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#       'ENGINE': 'django.db.backends.sqlite3',
+#      'NAME': BASE_DIR / 'db.sqlite3',
+#  }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('dck08e74g0d76i'),
+        'USER': config('jihtcajpmmusbh'),
+        'PASSWORD': config('a4562f90339c8ab2a40e20c427ca1584ec3e24e87d7fb811cb0126af42d27619'),
+        'PORT': config('5432'),
+        'HOST': config('ec2-52-22-135-159.compute-1.amazonaws.com'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
