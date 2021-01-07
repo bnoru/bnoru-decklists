@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'bnoru4.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('dck08e74g0d76i'),
-        'USER': config('jihtcajpmmusbh'),
-        'PASSWORD': config('a4562f90339c8ab2a40e20c427ca1584ec3e24e87d7fb811cb0126af42d27619'),
-        'PORT': config('5432'),
-        'HOST': config('ec2-52-22-135-159.compute-1.amazonaws.com'),
+        'NAME': 'dck08e74g0d76i',
+        'USER': config'jihtcajpmmusbh',
+        'PASSWORD': 'a4562f90339c8ab2a40e20c427ca1584ec3e24e87d7fb811cb0126af42d27619',
+        'PORT': '5432',
+        'HOST': 'ec2-52-22-135-159.compute-1.amazonaws.com',
     }
 }
 
