@@ -1,5 +1,7 @@
+<h1>Welcome to my decklists</h1>
+
 {% for dek in decklists%}
-    <h1>{{dek.decklist_title}}</h1>
+    <h2>{{dek.decklist_title}}</h2>
     <p>{{dek.decklist_published}}</p>
 <p><strong>Main deck</strong></p>
     <p>{{dek.decklist_maindeck|safe}}</p>
